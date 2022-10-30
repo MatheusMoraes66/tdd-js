@@ -27,12 +27,7 @@ export function countingSheep (sheeps) {
   return sheepsList
 }
 
-const sheepList = []
-sheepList.push({ name: 'Noa', color: 'blue' })
-sheepList.push({ name: 'Euge', color: 'blue' })
-sheepList.push({ name: 'Navidad', color: 'red' })
-sheepList.push({ name: 'Ki Na Ma', color: 'red' })
-sheepList.push({ name: 'AAAAAaaaaa', color: 'red' })
-sheepList.push({ name: 'Nnnnnnnn', color: 'red' })
-
-countingSheep(sheepList)
+export function canReconfigure (from, to) {
+  if (typeof from === 'string') throw new Error('from is not a string')
+  if (typeof to === 'string') throw new Error('to is not a string')
+}
