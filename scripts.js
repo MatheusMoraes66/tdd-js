@@ -23,5 +23,16 @@ export function countingSheep (sheeps) {
 
   const sheepsList = sheeps.filter((sheep) => sheep.color === 'red')
 
+  console.log(sheepsList)
   return sheepsList
 }
+
+const sheepList = []
+sheepList.push({ name: 'Noa', color: 'blue' })
+sheepList.push({ name: 'Euge', color: 'blue' })
+sheepList.push({ name: 'Navidad', color: 'red' })
+sheepList.push({ name: 'Ki Na Ma', color: 'red' })
+sheepList.push({ name: 'AAAAAaaaaa', color: 'red' })
+sheepList.push({ name: 'Nnnnnnnn', color: 'red' })
+
+countingSheep(sheepList)
